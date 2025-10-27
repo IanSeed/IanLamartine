@@ -1,0 +1,37 @@
+/*
+:root {
+    --bs-primary: #007bff;
+    --bs-primary-light: #66b2ff;
+    --bs-primary-dark: #0056b3;
+    --bs-secondary: #6c757d;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-body-bg: #f4f6fa;
+    --bs-body-color: #212529;
+    --bg-secondary: #6c757d;
+}
+$theme-colors: (
+  "primary":    #365b83,
+  "secondary":  #96a4af,
+  "success":    #0056b3,
+  "info":       #66b2ff,
+  "warning":    #0056b3,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       #212529,
+  cae9ff
+);
+*/
+
+#background{
+    background-color: #e7ecef;
+}
+
+#navegacao{
+    background-color: #0582CA;
+}
+
+#sobremim{
+    gap: 5%;
+    align-items: center;
+}
