@@ -1,0 +1,224 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+.fonte{
+    font-size: 2rem;
+}
+#background{
+    background-color: #e7ecef;
+}
+#navegacao{
+    background-color: #0582CA;
+}
+#sobremim{
+    gap: 5%;
+    align-items: center;
+}
+#titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+}
+.liquidglass{
+    background-color: rgba(187, 199, 214, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 1vw;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#inicio{
+    position: relative;
+    background: linear-gradient(rgba(5, 130, 202), rgba(231, 236, 239, 0.1));
+    padding-top: 10%;
+    padding-bottom: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#backinicio{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: auto;
+    animation: play 30s steps(300) infinite;
+}
+#textoinicio{
+    position: absolute;
+    font-family: 'Press Start 2P', Cursive;
+    font-size: 150%;
+    letter-spacing: 1px;
+    font-size: 3vw;
+    margin-top: 18%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #bec4ca;
+    animation: typing 2s steps(24),
+    cursor .4s step-end infinite alternate;
+}
+    @keyframes typing {
+    from { width: 0; }
+    to { width: 24ch; } /* número de caracteres do texto */
+    }
+
+    @keyframes blink {
+    50% { border-color: transparent; }
+    }
+#meusprojetos{
+    font-family: monospace;
+    color: rgb(66, 61, 61);
+    font-size: 130%;
+    position: absolute;
+    margin-top: 40%;
+    text-decoration: none;
+    background-color: rgb(240, 243, 247);
+    backdrop-filter: blur(5px);
+    border-radius: 1vw;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 1vw;
+    padding: 1vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: all 0.4s ease;
+}
+#meusprojetos:hover {
+    background: linear-gradient(to bottom right, #03045e, #00b4d8, #caf0f8);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 195, 255, 0.3);
+}
+
+
+#pfp{
+    width: 30vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 1vw;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#sobremimtxt{
+    overflow: hidden;
+    border-radius: 1vw;
+    padding: 4vw;
+    font-family: monospace;
+    font-size: 140%;
+}
+
+
+.overlay-wrapper {
+    /* Garante que o conteúdo não seja puxado para fora */
+    overflow: hidden; 
+}
+#DrStone{
+    margin-top: 1vw;
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(15%);
+}
+.EmManutencao{
+/* 1. Faz o texto flutuar acima da imagem */
+    position: absolute; 
+    
+    /* 2. Garante que ele ocupe toda a área do seu contêiner pai para centralizar */
+    width: 100%;
+    height: 100%;
+    /* 3. TRANSFORMA O ELEMENTO EM FLEX CONTAINER */
+    display: flex; 
+    
+    /* 4. CENTRALIZA HORIZONTALMENTE */
+    justify-content: center; 
+    
+    /* 5. CENTRALIZA VERTICALMENTE */
+    align-items: center; 
+    
+    /* --- Estilos Adicionais (Não essenciais para a centralização, mas importantes) --- */
+    /* CRUCIAL 2: Posiciona o centro do elemento no centro do wrapper */
+    top: 50%;
+    left: 50%;
+    /* CRUCIAL 3: Move o elemento 50% de sua PRÓPRIA altura/largura de volta */
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-family: 'Press Start 2P', Cursive;
+    font-size: 150%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    text-align: center; /* Garante que o texto dentro do <p> seja centralizado */
+    margin: 0; /* Remove a margem padrão do <p> */
+    
+    /* Garante que ele fique no topo (opcional) */
+    z-index: 10;
+}
+
+
+
+/* Estilo para o Título Principal */
+#skills h2 {
+    color: #212529;
+    position: relative;
+    padding-bottom: 10px;
+}
+#skills h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #0d6efd; /* Azul do Bootstrap */
+    margin: 10px auto 0;
+}
+/* Estilo da barra de progresso (opcional, mas melhora a estética) */
+.progress {
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+/* Cores das barras de progresso */
+/* Apenas para garantir que as cores sejam vibrantes */
+.progress-bar.bg-success { background-color: #198754 !important; }
+.progress-bar.bg-warning { background-color: #ffc107 !important; }
+.progress-bar.bg-info { background-color: #0dcaf0 !important; }
+.progress-bar.bg-primary { background-color: #0d6efd !important; }
+.progress-bar.bg-secondary { background-color: #6c757d !important; }
+/* Estilo para os Badges de Outras Habilidades */
+.badge {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.75rem 1.25rem !important; /* Aumenta o padding para serem mais visíveis */
+    transition: background-color 0.3s;
+}
+.badge:hover {
+    background-color: #495057 !important; /* Escurece no hover */
+}
+
+
+
+
+.footer {
+    background: linear-gradient(rgba(231,236,239,0.2), rgba(5,130,202,1));
+    padding: 5rem 0;
+    text-align: center;
+    color: #fff;
+}
+.footer-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.footer-icons i {
+    font-size: 2.8rem;
+    transition: 0.3s ease;
+    color: #ffffffd1;
+}
+.footer-link:hover i {
+    color: #fff;
+    transform: scale(1.2);
+    text-shadow: 0 0 12px rgba(255,255,255,0.8);
+}
+.footer-copy {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
